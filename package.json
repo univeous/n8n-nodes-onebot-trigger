@@ -9,6 +9,14 @@
     "webhook"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/univeous/n8n-nodes-onebot-trigger.git"
+  },
+  "homepage": "https://github.com/univeous/n8n-nodes-onebot-trigger",
+  "bugs": {
+    "url": "https://github.com/univeous/n8n-nodes-onebot-trigger/issues"
+  },
   "author": "univeous",
   "type": "commonjs",
   "main": "dist/index.js",
