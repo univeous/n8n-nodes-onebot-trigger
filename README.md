@@ -1,5 +1,9 @@
 # n8n-nodes-onebot-trigger
 
+[![npm version](https://img.shields.io/npm/v/n8n-nodes-onebot-trigger.svg)](https://www.npmjs.com/package/n8n-nodes-onebot-trigger)
+[![npm downloads](https://img.shields.io/npm/dm/n8n-nodes-onebot-trigger.svg)](https://www.npmjs.com/package/n8n-nodes-onebot-trigger)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 OneBot Trigger community node for n8n.
 
 ## Features
