@@ -1,0 +1,42 @@
+{
+  "name": "n8n-nodes-onebot-trigger",
+  "version": "0.1.3",
+  "description": "OneBot trigger node for n8n with HMAC-SHA1 webhook verification",
+  "keywords": [
+    "n8n-community-node-package",
+    "onebot",
+    "qq",
+    "webhook"
+  ],
+  "license": "MIT",
+  "author": "univeous",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && mkdir -p dist/nodes/OneBotTrigger && cp nodes/OneBotTrigger/onebot.png dist/nodes/OneBotTrigger/onebot.png",
+    "dev": "tsc -w",
+    "lint": "echo 'No lint configured'",
+    "test:webhook": "bash scripts/send-onebot-test.sh"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/nodes/OneBotTrigger/OneBotWebhookApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/OneBotTrigger/OneBotTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.5",
+    "n8n-node-dev": "^1.63.0",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
